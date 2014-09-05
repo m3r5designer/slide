@@ -1,5 +1,5 @@
 	                                 
-(c) 2013 Max King Reice | m3r5designs.com
+SLIDE(c) V3 2013 Max King Reice | m3r5designs.com
 This plugin is being shared under the MIT License
 
 SLIDE is opensource and free to all.
