@@ -1,0 +1,144 @@
+/*Slide v3 | (c) 2013 Max King Reice | m3r5designs.com*/
+.swipe {
+	opacity:0.75
+}
+.overlayer {
+	opacity: 0;
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	height: 100%;
+}
+.progress {
+	z-index: 8;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 11px;
+	background: rgba(255,255,255,0.75);
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+}
+.progressBar {
+	z-index: 9;
+	position: absolute;
+	left: 0;
+	bottom: 3px;
+	width: 0%;
+	height: 5px;
+	background: #00e5ff;
+	opacity: 0.75;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+}
+.progressComplete {
+	width: 100%;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+}
+.nextButton, .prevButton {
+	-webkit-transition: 250ms all ease;
+	-moz-transition: 250ms all ease;
+	transition: 250ms all ease;	
+	z-index: 20;
+	position: absolute;
+	height: 100%;
+	width: 5%;
+	min-width: 60px;
+	bottom: 0;
+	alignment-baseline: middle;
+	cursor: pointer;
+	opacity: 0;
+	background-repeat: no-repeat;
+}
+.nextButton:hover, .prevButton:hover {
+	opacity: 1.0;
+}
+.nextButton:active, .prevButton:active, .nextButton:focus, .prevButton:focus {
+	opacity: 0.25;
+}
+.nextButton {
+	right: 0;
+	background-image: url(images/next.png);
+	background-position: bottom right;
+	background-size: contain;
+}
+.prevButton {
+	left: 0;
+	background-image: url(images/previous.png);
+	background-position: bottom left;
+	background-size: contain;
+}
+
+.slideIt {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgba(125,125,125,0.5);
+}
+.theSlides {
+	width: 100%;
+	height: 100%;
+}
+.aSlide img {
+	width: 100%;
+	bottom: 50%;
+	left: 50%;
+	height: auto;
+	margin: auto;
+	padding: auto;
+	display: block;
+}
+.aSlide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	float: left;
+	display: none;
+	overflow: hidden;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+}
+.slideActive {
+	z-index: 5;
+	display: block;
+}
+.thumbnails {
+	background: rgba(125,125,125,0.75);
+	overflow-x: scroll;
+	overflow-y: hidden;
+	white-space: nowrap;
+	width: 100%;
+	height: 80px;
+	position: relative;
+}
+.thumbs {
+	background: rgba(255,89,0,0);
+	border-top: 5px solid rgba(0,0,0,0);
+	border-bottom: 5px solid rgba(0,0,0,0);
+	overflow: hidden;
+	display: inline-block;
+	white-space: normal;
+	width: 70px;
+	height: 80px;
+	opacity: 0.75;
+}
+.thumbs:hover {
+	background: rgba(255,89,0,0.75);
+	opacity: 1;
+}
+.thumbsActive {
+	-webkit-transition: 250ms all ease;
+	-moz-transition: 250ms all ease;
+	transition: 250ms all ease;
+	border-top: 5px solid #ff5900;
+	border-bottom: 5px solid #ff5900;
+	opacity: 1;
+	background: #fff;
+}
