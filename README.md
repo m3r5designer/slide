@@ -1,6 +1,7 @@
 SLIDE is a web-slider that employs HTML5, CSS3, JQuery, and JQuery Mobile.<br>
 SLIDE is made to be light weight and simple.<br>
-SLIDE includes image protection to keep people from easily stealing your images
+SLIDE includes image protection to keep people from easily stealing your images<br>
+SLIDE requires JQuery, JQuery Mobile, & JQuery UI to run.
 	                                 
 SLIDE(c) V3 2013 Max King Reice | m3r5designs.com
 This plugin is being shared under the MIT License
